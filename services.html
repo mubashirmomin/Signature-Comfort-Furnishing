@@ -1,0 +1,220 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Signature Comfort Furnishing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Unique Stylish Touches for the Services Page -->
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(11, 19, 32, 0.85), rgba(11, 19, 32, 0.95)), url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 160px 20px 80px;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+        }
+        .page-hero h1 {
+            color: var(--accent);
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #E0E0E0;
+            font-weight: 300;
+        }
+        
+        /* Clean Image Wrapper Effect (No Border) */
+        .image-wrapper {
+            position: relative;
+            z-index: 1;
+            margin: 0 15px;
+            display: flex; 
+            overflow: hidden; /* Keeps the zoom effect inside the rounded corners */
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: 320px; 
+            object-fit: cover;
+            display: block; 
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Subtle zoom effect on hover */
+        .service-detail:hover .image-wrapper img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo2.png" alt="Signature Comfort Logo">
+                <span class="logo-text">Signature Comfort Furnishing</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a> 
+            <a href="testimonials.html">Testimonials</a> 
+            <a href="faq.html">FAQ</a> 
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero Banner -->
+    <header class="page-hero">
+        <h1>Our Expert Services</h1>
+        <p>From bespoke manufacturing to meticulous restoration, discover how we bring luxury and comfort into your space.</p>
+    </header>
+
+    <section style="padding-top: 80px; background: var(--bg-light);">
+        
+        <!-- Service 1 -->
+        <div class="service-detail">
+            <div class="service-detail-img">
+                <div class="image-wrapper">
+                    <img src="assets/images/custom-sofa2.png" alt="Custom Sofa Manufacturing">
+                </div>
+            </div>
+            <div class="service-detail-content">
+                <h3 style="font-size: 2.2rem;">Custom Sofa Manufacturing</h3>
+                <p>We build sofas tailored to your exact specifications. Choose your frame style, cushioning density, and premium fabric to create the perfect centerpiece for your living room.</p>
+                <div class="btn-group">
+                    <a href="tel:9226812768" class="btn btn-primary">Call Now</a>
+                    <a href="https://wa.me/919226812768" class="btn btn-whatsapp" target="_blank">WhatsApp Enquiry</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-detail">
+            <div class="service-detail-img">
+                <div class="image-wrapper">
+                    <img src="assets/images/sofa-repair.png" alt="Sofa Repair & Restoration">
+                </div>
+            </div>
+            <div class="service-detail-content">
+                <h3 style="font-size: 2.2rem;">Sofa Repair & Restoration</h3>
+                <p>Don't throw away good furniture. We fix broken frames, sagging springs, and structural damages to return your sofa to its original glory.</p>
+                <div class="btn-group">
+                    <a href="tel:9226812768" class="btn btn-primary">Call Now</a>
+                    <a href="https://wa.me/919226812768" class="btn btn-whatsapp" target="_blank">WhatsApp Enquiry</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-detail">
+            <div class="service-detail-img">
+                <div class="image-wrapper">
+                    <img src="assets/images/sofa-upholstery.png" alt="Sofa Upholstery">
+                </div>
+            </div>
+            <div class="service-detail-content">
+                <h3 style="font-size: 2.2rem;">Sofa Upholstery & Fabric Change</h3>
+                <p>Give your old sofa a brand new look with our extensive catalog of premium fabrics, leathers, and velvets. Perfect finishing guaranteed.</p>
+                <div class="btn-group">
+                    <a href="tel:9226812768" class="btn btn-primary">Call Now</a>
+                    <a href="https://wa.me/919226812768" class="btn btn-whatsapp" target="_blank">WhatsApp Enquiry</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="service-detail">
+            <div class="service-detail-img">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=800&q=80" alt="Cushions & Foam Replacement">
+                </div>
+            </div>
+            <div class="service-detail-content">
+                <h3 style="font-size: 2.2rem;">Cushion & Foam Replacement</h3>
+                <p>Restore the comfort of your seating. We replace old, sunken foam with high-density, durable foam for long-lasting support. Custom cushion making also available.</p>
+                <div class="btn-group">
+                    <a href="tel:9226812768" class="btn btn-primary">Call Now</a>
+                    <a href="https://wa.me/919226812768" class="btn btn-whatsapp" target="_blank">WhatsApp Enquiry</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-detail">
+            <div class="service-detail-img">
+                <div class="image-wrapper">
+                    <img src="assets/images/curtains.png" alt="Curtains & Mattresses">
+                </div>
+            </div>
+            <div class="service-detail-content">
+                <h3 style="font-size: 2.2rem;">Curtain Making & Mattress Manufacturing</h3>
+                <p>Complete your room's aesthetic with custom curtains. We also manufacture custom mattresses designed for your specific sleep and comfort needs.</p>
+                <div class="btn-group">
+                    <a href="tel:9226812768" class="btn btn-primary">Call Now</a>
+                    <a href="https://wa.me/919226812768" class="btn btn-whatsapp" target="_blank">WhatsApp Enquiry</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Service 6 (New) -->
+        <div class="service-detail">
+            <div class="service-detail-img">
+                <div class="image-wrapper">
+                    <img src="assets/images/new6.jpeg" alt="Custom Bed Back Manufacturing">
+                </div>
+            </div>
+            <div class="service-detail-content">
+                <h3 style="font-size: 2.2rem;">Custom Bed Back Manufacturing</h3>
+                <p>Elevate your bedroom's aesthetic and comfort with our custom-designed bed backs (headboards). We craft and upholster tufted, paneled, and contemporary bed backs tailored to your exact style and dimensions.</p>
+                <div class="btn-group">
+                    <a href="tel:9226812768" class="btn btn-primary">Call Now</a>
+                    <a href="https://wa.me/919226812768" class="btn btn-whatsapp" target="_blank">WhatsApp Enquiry</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Signature Comfort</h3>
+                <p>Custom Sofa Manufacturing & Repair Services</p>
+                <p>Luxury You Can Sit On</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Phone: 9226812768</p>
+                <p>Alternate: 9921193441</p>
+                <p>Address: Kamaldeep Garden, Opp. Sheetal Petrol Pump, Kondwa, Pune – 411048</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Signature Comfort Furnishing. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

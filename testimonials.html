@@ -1,0 +1,220 @@
+<!-- testimonials.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Signature Comfort Furnishing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Unique Stylish Touches for the Testimonials Page -->
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(11, 19, 32, 0.85), rgba(11, 19, 32, 0.95)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 160px 20px 80px;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+        }
+        .page-hero h1 {
+            color: var(--accent);
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #E0E0E0;
+            font-weight: 300;
+        }
+        
+        /* Premium Testimonial Cards */
+        .testi-card {
+            border-top: 4px solid var(--accent);
+            background: white;
+            padding: 40px 30px;
+            border-radius: 0 0 8px 8px;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            z-index: 1;
+        }
+        .testi-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .quote-icon {
+            font-family: 'Playfair Display', serif;
+            font-size: 8rem;
+            color: rgba(212, 175, 55, 0.1); /* Very faint luxury gold */
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            line-height: 1;
+            z-index: -1;
+        }
+        .testi-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+            margin: 20px 0;
+            line-height: 1.7;
+        }
+        .client-info {
+            border-left: 3px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 25px;
+        }
+        .client-info h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 2px;
+        }
+        .client-info p {
+            font-size: 0.9rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo2.png" alt="Signature Comfort Logo">
+                <span class="logo-text">Signature Comfort Furnishing</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a> 
+            <a href="testimonials.html">Testimonials</a> 
+            <a href="faq.html">FAQ</a> 
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero Banner -->
+    <header class="page-hero">
+        <h1>Client Testimonials</h1>
+        <p>Don't just take our word for it. Hear what our satisfied clients across Pune have to say about our craftsmanship.</p>
+    </header>
+
+    <!-- Testimonials Section -->
+    <section style="padding-top: 60px;">
+        <div class="grid-3">
+            
+            <!-- Review 1 -->
+            <div class="testi-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">"Excellent work. My old sofa looks absolutely brand new. The fabric quality is top-notch and the attention to detail is remarkable."</p>
+                <div class="client-info">
+                    <h4>Rahul D.</h4>
+                    <p>Kondhwa, Pune</p>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="testi-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">"Professional service and highly reasonable pricing. Asif and his team delivered exactly what we envisioned for our living room."</p>
+                <div class="client-info">
+                    <h4>Sneha M.</h4>
+                    <p>NIBM Road</p>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="testi-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">"Highly recommended in Pune. I had my entire dining set reupholstered and the craftsmanship is simply flawless. Worth every penny."</p>
+                <div class="client-info">
+                    <h4>Vikram S.</h4>
+                    <p>Camp, Pune</p>
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="testi-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">"Great craftsmanship and incredibly timely delivery. They promised it would be done in 10 days, and it was delivered on day 9. Fantastic!"</p>
+                <div class="client-info">
+                    <h4>Pooja K.</h4>
+                    <p>Wakad</p>
+                </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="testi-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">"Very satisfied with the sofa customization work. They let me pick out the exact foam density and premium fabric. It's the most comfortable sofa I've ever owned."</p>
+                <div class="client-info">
+                    <h4>Amit J.</h4>
+                    <p>Undri, Pune</p>
+                </div>
+            </div>
+            
+            <!-- Review 6 -->
+            <div class="testi-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p class="testi-text">"They brought our ripped, sagging heirloom armchair back to life. The restoration work is beautiful and they clearly respect antique furniture."</p>
+                <div class="client-info">
+                    <h4>Rashid K.</h4>
+                    <p>Koregaon Park</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid #eaeaea;">
+            <h3 style="margin-bottom: 25px; font-size: 2rem;">Ready to upgrade your comfort?</h3>
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <a href="tel:9226812768" class="btn btn-primary">Call Now</a>
+                <a href="https://wa.me/919226812768" class="btn btn-whatsapp" target="_blank">WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Signature Comfort</h3>
+                <p>Custom Sofa Manufacturing & Repair Services</p>
+                <p>Luxury You Can Sit On</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Phone: 9226812768</p>
+                <p>Alternate: 9921193441</p>
+                <p>Address: Kamaldeep Garden, Opp. Sheetal Petrol Pump, Kondwa, Pune – 411048</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Signature Comfort Furnishing. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Signature Comfort Furnishing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Unique Stylish Touches for the Contact Page -->
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(11, 19, 32, 0.85), rgba(11, 19, 32, 0.95)), url('https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 160px 20px 80px;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+        }
+        .page-hero h1 {
+            color: var(--accent);
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #E0E0E0;
+            font-weight: 300;
+        }
+
+        /* Premium Contact Card Styling */
+        .contact-info-card {
+            border-top: 4px solid var(--accent);
+            background: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            z-index: 1;
+        }
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .contact-info-card h3 {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 15px;
+        }
+        .contact-info-card p strong {
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            display: inline-block;
+            min-width: 140px;
+        }
+        .contact-info-card p a {
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+        .contact-info-card p a:hover {
+            color: var(--accent);
+        }
+
+        /* Premium Map Styling */
+        .map-container {
+            border: 3px solid var(--accent);
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            padding: 5px;
+            background: white;
+        }
+        .map-container iframe {
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo2.png" alt="Signature Comfort Logo">
+                <span class="logo-text">Signature Comfort Furnishing</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a> 
+            <a href="testimonials.html">Testimonials</a> 
+            <a href="faq.html">FAQ</a> 
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero Banner -->
+    <header class="page-hero">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us directly for the best bespoke furniture solutions and restoration services in Pune.</p>
+    </header>
+
+    <section style="padding-top: 80px; background: var(--bg-light);">
+        <div class="contact-wrapper">
+            
+            <!-- Contact Information -->
+            <div class="contact-info-card">
+                <h3>Business Information</h3>
+                <p><strong>Business Name:</strong> Signature Comfort Furnishing</p>
+                <p><strong>Phone:</strong> <a href="tel:9226812768">9226812768</a></p>
+                <p><strong>Alternate No.:</strong> <a href="tel:9921193441">9921193441</a></p>
+                <p><strong>Address:</strong> Kamaldeep Garden, Opp. Sheetal Petrol Pump, Kondwa, Pune – 411048</p>
+                
+                <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 15px;">
+                    <a href="tel:9226812768" class="btn btn-primary" style="text-align: center;">Call Now</a>
+                    <a href="https://wa.me/919226812768" class="btn btn-whatsapp" style="justify-content: center;" target="_blank">WhatsApp Now</a>
+                    <a href="https://www.google.com/maps/place/Kamaldeep+Gardens+-+Bldg+B2/@18.4679896,73.8851407,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2ea61e9f03525:0xaf76242d96aaf49!8m2!3d18.4679897!4d73.8900116!16s%2Fg%2F11f03tyk9q?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" class="btn btn-accent" style="text-align: center;" target="_blank">Get Directions</a>
+                </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.53767228812!2d73.88636731535492!3d18.45934338744431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ea9cf6d21469%3A0xb35a3ccbc9714ab0!2sKondhwa%2C%20Pune%2C%20Maharashtra%20411048!5e0!3m2!1sen!2sin!4v1655000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Signature Comfort</h3>
+                <p>Custom Sofa Manufacturing & Repair Services</p>
+                <p>Luxury You Can Sit On</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Phone: 9226812768</p>
+                <p>Alternate: 9921193441</p>
+                <p>Address: Kamaldeep Garden, Opp. Sheetal Petrol Pump, Kondwa, Pune – 411048</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Signature Comfort Furnishing. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

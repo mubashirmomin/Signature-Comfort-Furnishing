@@ -1,0 +1,191 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Signature Comfort Furnishing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Unique Stylish Touches for the Portfolio Page -->
+    <style>
+        .page-hero {
+            background: linear-gradient(rgba(11, 19, 32, 0.85), rgba(11, 19, 32, 0.95)), url('https://images.unsplash.com/photo-1505693314120-0d443867891c?auto=format&fit=crop&w=1920&q=80') center/cover;
+            padding: 160px 20px 80px;
+            text-align: center;
+            color: white;
+            margin-top: 0;
+        }
+        .page-hero h1 {
+            color: var(--accent);
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        .page-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #E0E0E0;
+            font-weight: 300;
+        }
+
+        /* Premium Filter Buttons */
+        .filter-btns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+        .filter-btn {
+            padding: 10px 25px;
+            border: 2px solid var(--accent);
+            background: transparent;
+            color: var(--primary);
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--accent);
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Premium Portfolio Hover Effects */
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .portfolio-item:hover {
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+            z-index: 2;
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.08);
+            filter: brightness(0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky">
+        <div class="logo">
+            <a href="index.html">
+                <!-- Using your updated circular logo -->
+                <img src="assets/images/logo2.png" alt="Signature Comfort Logo">
+                <span class="logo-text">Signature Comfort Furnishing</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a> 
+            <a href="testimonials.html">Testimonials</a> 
+            <a href="faq.html">FAQ</a> 
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero Banner -->
+    <header class="page-hero">
+        <h1>Our Masterpieces</h1>
+        <p>Browse our gallery of completed projects. Click on any category below to filter, and click on any image to enlarge.</p>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section style="padding-top: 60px;">
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="repair">Sofa Repair</button>
+            <button class="filter-btn" data-filter="upholstery">Sofa Upholstery</button>
+            <button class="filter-btn" data-filter="custom">Custom Sofas</button>
+            <button class="filter-btn" data-filter="cushion">Cushion Work</button>
+            <button class="filter-btn" data-filter="curtains">Curtains & Blinds</button>
+            <button class="filter-btn" data-filter="mattress">Mattresses</button>
+            <!-- Added Bed Backs Filter Button -->
+            <button class="filter-btn" data-filter="bed-backs">Bed Backs</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="custom"><img src="assets/images/new11.jpeg" loading="lazy" alt="Custom Sofa"></div>
+            <div class="portfolio-item" data-category="upholstery"><img src="assets/images/new3.png" loading="lazy" alt="Upholstery Work"></div>
+            <div class="portfolio-item" data-category="curtains"><img src="assets/images/curtains-3.png" loading="lazy" alt="Curtains"></div>
+            <div class="portfolio-item" data-category="repair"><img src="assets/images/sofa-repair.png" loading="lazy" alt="Sofa Repair"></div>
+            <div class="portfolio-item" data-category="cushion"><img src="assets/images/new4.jpeg" loading="lazy" alt="Cushion Replacement"></div>
+            <div class="portfolio-item" data-category="custom"><img src="assets/images/new12.jpeg" loading="lazy" alt="Custom Furniture"></div>
+            <div class="portfolio-item" data-category="upholstery"><img src="assets/images/new2.png" loading="lazy" alt="Fabric Change"></div>
+            <div class="portfolio-item" data-category="repair"><img src="assets/images/new1.png" loading="lazy" alt="Furniture Restoration"></div>
+            
+            <!-- Curtains Items -->
+            <div class="portfolio-item" data-category="curtains"><img src="assets/images/new15.png" loading="lazy" alt="Custom Curtains 1"></div>
+            <div class="portfolio-item" data-category="curtains"><img src="assets/images/new16.png" loading="lazy" alt="Custom Curtains 2"></div>
+
+            <!-- Mattress Portfolio Items -->
+            <div class="portfolio-item" data-category="mattress"><img src="assets/images/new9.jpeg" loading="lazy" alt="Custom Mattress Example 1"></div>
+            <div class="portfolio-item" data-category="mattress"><img src="assets/images/new10.jpeg" loading="lazy" alt="Custom Mattress Example 2"></div>
+
+            <!-- 2 New Custom Sofa Items -->
+            <div class="portfolio-item" data-category="custom"><img src="assets/images/new20.png" loading="lazy" alt="Custom Sofa Example 3"></div>
+            <div class="portfolio-item" data-category="custom"><img src="assets/images/new23.png" loading="lazy" alt="Custom Sofa Example 4"></div>
+
+            <!-- 2 New Bed Backs Items -->
+            <div class="portfolio-item" data-category="bed-backs"><img src="assets/images/new5.jpeg" loading="lazy" alt="Custom Bed Back 1"></div>
+            <div class="portfolio-item" data-category="bed-backs"><img src="assets/images/new6.jpeg" loading="lazy" alt="Custom Bed Back 2"></div>
+        </div>
+    </section>
+
+    <!-- Lightbox Element -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="" id="lightbox-img" alt="Portfolio Image Enlarged">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Signature Comfort</h3>
+                <p>Custom Sofa Manufacturing & Repair Services</p>
+                <p>Luxury You Can Sit On</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Phone: 9226812768</p>
+                <p>Alternate: 9921193441</p>
+                <p>Address: Kamaldeep Garden, Opp. Sheetal Petrol Pump, Kondwa, Pune – 411048</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Signature Comfort Furnishing. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

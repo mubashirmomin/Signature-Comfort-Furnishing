@@ -1,0 +1,285 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Signature Comfort Furnishing</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Unique Premium Styling for the About Page -->
+    <style>
+        .page-hero { 
+            background: linear-gradient(rgba(11, 19, 32, 0.85), rgba(11, 19, 32, 0.95)), url('https://images.unsplash.com/photo-1540574163026-643ea20d25b5?auto=format&fit=crop&w=1920&q=80') center/cover; 
+            padding: 160px 20px 80px; 
+            text-align: center; 
+            color: white; 
+            margin-top: 0; 
+        }
+        .page-hero h1 { 
+            color: var(--accent); 
+            font-size: 3.5rem; 
+            margin-bottom: 15px; 
+            letter-spacing: 1px; 
+        }
+        .page-hero p { 
+            font-size: 1.2rem; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            color: #E0E0E0; 
+            font-weight: 300; 
+        }
+
+        /* Editorial Split Layout */
+        .about-section {
+            padding: 100px 5%;
+            background: var(--bg-light);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-content h4 {
+            color: var(--accent);
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .about-content h2 {
+            font-size: 3.2rem;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            color: var(--primary);
+        }
+        .about-content p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        /* Overlapping Images & Floating Badge */
+        .about-images {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            padding-bottom: 40px; /* Space for the overlapping image */
+        }
+        .img-main {
+            width: 85%;
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .img-overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 55%;
+            border: 8px solid var(--bg-light);
+            border-radius: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .floating-badge {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            background: #0B1320;
+            color: white;
+            padding: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 3px solid var(--accent);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+        .floating-badge .num {
+            font-size: 3rem;
+            color: var(--accent);
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            line-height: 1;
+        }
+        .floating-badge .text {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        /* Dark Theme Values Section */
+        .values-section {
+            background: #0B1320;
+            padding: 100px 5%;
+            color: white;
+            text-align: center;
+            border-top: 4px solid var(--accent);
+        }
+        .values-section h2 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        .values-section > p {
+            color: #A0AABF;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 50px;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .value-box {
+            padding: 50px 30px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            transition: all 0.4s ease;
+            background: rgba(255,255,255,0.02);
+        }
+        .value-box:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+        .value-box h3 {
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .value-box p {
+            color: #E0E0E0;
+            line-height: 1.7;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .about-images { padding-bottom: 0; padding-right: 40px; }
+            .img-main { width: 100%; }
+            .img-overlay { bottom: -20px; right: -20px; width: 60%; }
+            .floating-badge { width: 120px; height: 120px; top: -15px; left: -15px; }
+            .floating-badge .num { font-size: 2.2rem; }
+            .floating-badge .text { font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (Fixed to behave exactly like the home page) -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo2.png" alt="Signature Comfort Logo">
+                <span class="logo-text">Signature Comfort Furnishing</span>
+            </a>
+        </div>
+        <div class="hamburger">☰</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About Us</a> 
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a> 
+            <a href="testimonials.html">Testimonials</a> 
+            <a href="faq.html">FAQ</a> 
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Page Hero Banner -->
+    <header class="page-hero">
+        <h1>Our Story</h1>
+        <p>Crafting elegance, preserving heritage, and engineering comfort for homes across Pune.</p>
+    </header>
+
+    <!-- Editorial About Section -->
+    <section class="about-section">
+        <div class="about-images">
+            <div class="floating-badge">
+                <span class="num">25</span>
+                <span class="text">Years<br>Experience</span>
+            </div>
+            <!-- Main Large Image -->
+            <img src="assets/images/curtains-3.png" alt="Master Craftsman" class="img-main">
+            <!-- Secondary Overlapping Image -->
+            <img src="assets/images/sofa-chair.png" alt="Furniture Detail" class="img-overlay">
+        </div>
+        
+        <div class="about-content">
+            <h4>Who We Are</h4>
+            <h2>Mastering the Art of Upholstery</h2>
+            <p>Located in the heart of Kondwa, Pune, <strong>Signature Comfort Manufacturing</strong> is a premier destination for bespoke furniture creation and meticulous restoration.</p>
+            <p>Led by Asif Sayyed, our dedicated team specializes in breathing life back into aging fabrics and frames, transforming everyday living spaces into sanctuaries of luxury.</p>
+            <p>With a quarter-century of dedicated service in the manufacturing industry, we have perfected the delicate balance of combining traditional, time-honored workmanship with the crisp demands of modern aesthetics.</p>
+            
+            <div style="margin-top: 30px;">
+                <a href="contact.html" class="btn btn-primary">Contact Our Experts</a>
+                <a href="portfolio.html" style="margin-left: 20px; font-weight: 600; text-decoration: underline; color: var(--primary);">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Dark Values Section -->
+    <section class="values-section">
+        <h2>Our Core Values</h2>
+        <p>The principles that guide every cut, stitch, and frame we build.</p>
+        
+        <div class="values-grid">
+            <div class="value-box">
+                <h3>Our Mission</h3>
+                <p>To provide high-quality, durable, and beautifully crafted furniture solutions that elevate the living spaces of our clients, all while maintaining strictly accessible and transparent pricing.</p>
+            </div>
+            <div class="value-box">
+                <h3>Our Vision</h3>
+                <p>To be the most trusted, sought-after name in custom sofa manufacturing and elite furniture restoration throughout Pune and the surrounding regions.</p>
+            </div>
+            <div class="value-box">
+                <h3>Our Commitment</h3>
+                <p>Unwavering focus on premium materials, structural durability, absolute customer satisfaction, elite workmanship, and flawless, timely delivery for every single project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Signature Comfort</h3>
+                <p>Custom Sofa Manufacturing & Repair Services</p>
+                <p>Luxury You Can Sit On</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Phone: 9226812768</p>
+                <p>Alternate: 9921193441</p>
+                <p>Address: Kamaldeep Garden, Opp. Sheetal Petrol Pump, Kondwa, Pune – 411048</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Signature Comfort Furnishing. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
